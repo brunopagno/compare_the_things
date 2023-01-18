@@ -304,7 +304,7 @@ let object_version = {
   IJQEXEBvgwtEo: "hOOkEHQTILFZw",
 };
 
-function runTheThing(f) {
+function runTheThing(name, f) {
   let startTime = performance.now();
 
   for (let i = 0; i < 10000; i += 1) {
@@ -312,8 +312,10 @@ function runTheThing(f) {
   }
   let elapsedTime = performance.now() - startTime;
 
-  console.log(`Time has passed ${elapsedTime}`);
+  console.log(`[${name}] Time has passed ${elapsedTime}`);
 }
 
-runTheThing(() => array_version.find((item) => item[0] === "IJQEXEBvgwtEo"));
-runTheThing(() => object_version["IJQEXEBvgwtEo"]);
+runTheThing("Array", () =>
+  array_version.find((item) => item[0] === "IJQEXEBvgwtEo")
+);
+runTheThing("Object", () => object_version["IJQEXEBvgwtEo"]);
