@@ -1,0 +1,14 @@
+{
+  "name": "compare_the_things",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "thing": "node ./src/index.js"
+  },
+  "author": "Bruno",
+  "license": "MIT",
+  "devDependencies": {
+    "benchmark": "^2.1.4"
+  }
+}
