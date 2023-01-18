@@ -307,7 +307,7 @@ let object_version = {
 function runTheThing(f) {
   let startTime = performance.now();
 
-  for (let i = 0; i < 100000; i += 1) {
+  for (let i = 0; i < 10000; i += 1) {
     f();
   }
   let elapsedTime = performance.now() - startTime;
