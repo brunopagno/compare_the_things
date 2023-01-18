@@ -7,8 +7,5 @@
     "thing": "node ./src/index.js"
   },
   "author": "Bruno",
-  "license": "MIT",
-  "devDependencies": {
-    "benchmark": "^2.1.4"
-  }
+  "license": "MIT"
 }
